@@ -593,6 +593,7 @@ video {
 }
 .top-0 {
   top: 0px;
+  z-index: 999;
 }
 .z-10 {
   z-index: 10;
@@ -1061,7 +1062,7 @@ video {
   border-radius: 0.5rem;
   border-style: solid;
   padding: 0.5rem;
-  z-index: 999;
+  z-index: 1;
   position: relative;
   background-color: #d8dee9;
 }
