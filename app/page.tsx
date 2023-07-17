@@ -106,8 +106,8 @@ export default function Home() {
 
       <div className="flex p-24 relative place-items-center ">
         <p className={`m-0 text-sm text-center w-2 block-color-1`}>
-          I'm open to freelance and speaking at events. Please don't hesitate to
-          get in touch ☎️
+          I&apos;m open to freelance and speaking at events. Please don&apos;t
+          hesitate to get in touch ☎️
         </p>
       </div>
 
