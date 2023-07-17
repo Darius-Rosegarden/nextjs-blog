@@ -4,10 +4,10 @@ html {
   max-width: 100%;
 }
 
-@for $j from 0 through 30 {
-  $width: #{150 + ($j * 50)};
-  @media (max-width: #{450 + ($j*50)}px) and (min-width: #{400 + ($j*50)}px) {
+@for $j from 0 through 40 {
+  @media (max-width: #{150 + ($j*50)}px) and (min-width: #{100 + ($j*50)}px) {
     .drops {
+      z-index: 10;
       @for $i from 1 through 50 + $j {
         $random-yoyo-time: random_range(3, 8) / 10;
         font-family: Georgia, serif;
