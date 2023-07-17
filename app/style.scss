@@ -4,8 +4,8 @@ html {
   max-width: 100%;
 }
 
-@for $j from 0 through 30 {
-  $width: #{450 + ($j * 50)};
+@for $j from 0 through 35 {
+  $width: #{200 + ($j * 50)};
   @media (max-width: #{450 + ($j*50)}px) and (min-width: #{400 + ($j*50)}px) {
     .drops {
       @for $i from 1 through 50 + $j {
