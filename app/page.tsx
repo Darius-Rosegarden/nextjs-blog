@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import "./style.scss";
 import "./layout.css";
 
@@ -7,10 +8,13 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-8 max-w-screen">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-xl lg:flex">
         <p
-          className="font-mono font-bold fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto bg-gradient-to-t from-white via-white dark:from-black
+          className="font-mono font-bold fixed left-0 top-0 flex w-full justify-center pb-6 pt-8
+          bg-gradient-to-t from-white via-white dark:from-black
          dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none"
         >
-          BELSITE.
+          <Link href="/" className="hover:red">
+            BELSITE.
+          </Link>
         </p>
 
         <div
@@ -18,41 +22,53 @@ export default function Home() {
         justify-center bg-gradient-to-t from-white via-white dark:from-black
          dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none"
         >
-          <div className="px-5">
-            <Image
-              src="/assets/mail_icon.png"
-              alt="Mail Logo"
-              width={40}
-              height={50}
-              priority
-            />
+          <div className="px-5 hover:opacity">
+            {" "}
+            <Link href="mailto:rosegarden.paul@gmail.com" className="hover:red">
+              <Image
+                src="/assets/mail_icon.png"
+                alt="Mail Logo"
+                width={40}
+                height={50}
+                priority
+              />
+            </Link>
           </div>
-          <div className="lg\:p-4">
-            <Image
-              src="/assets/github_icon.png"
-              alt="Github Logo"
-              width={40}
-              height={50}
-              priority
-            />
+          <div className="lg\:p-4 hover:opacity">
+            <Link
+              href="https://github.com/Darius-Rosegarden"
+              className="hover:red"
+            >
+              <Image
+                src="/assets/github_icon.png"
+                alt="Github Logo"
+                width={40}
+                height={50}
+                priority
+              />
+            </Link>
           </div>
-          <div className="px-5">
-            <Image
-              src="/assets/linkedin_icon.png"
-              alt="LinkedIn Logo"
-              width={40}
-              height={50}
-              priority
-            />
+          <div className="px-5 hover:opacity">
+            <Link href="https://www.linkedin.com/in/karpavicius/">
+              <Image
+                src="/assets/linkedin_icon.png"
+                alt="LinkedIn Logo"
+                width={40}
+                height={50}
+                priority
+              />
+            </Link>
           </div>
-          <div className="lg\:p-4">
-            <Image
-              src="/assets/kaggle_icon.png"
-              alt="Kaggle Logo"
-              width={40}
-              height={50}
-              priority
-            />
+          <div className="lg\:p-4 hover:opacity">
+            <Link href="https://www.kaggle.com/rosegarden">
+              <Image
+                src="/assets/kaggle_icon.png"
+                alt="Kaggle Logo"
+                width={40}
+                height={50}
+                priority
+              />
+            </Link>
           </div>
         </div>
       </div>
@@ -77,7 +93,6 @@ export default function Home() {
           />
 
           <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert group rounded-lg
           border border-transparent px-5 py-4 transition-colors hover:border-gray-300
           hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 text-right"

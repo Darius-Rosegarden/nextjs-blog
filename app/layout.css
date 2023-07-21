@@ -1110,3 +1110,12 @@ video {
   flex-direction: row-reverse;
   max-width: 40rem;
 }
+
+.hover\:red:hover {
+  color: #bf616a;
+}
+
+.hover\:opacity:hover {
+  transition: opacity 0.2s;
+  opacity: 70%;
+}
